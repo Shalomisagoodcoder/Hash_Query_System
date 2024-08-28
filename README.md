@@ -162,4 +162,6 @@ Quota has exceeded.
 Code execution has ended!
 A total of 0 SHA1 values were found, while 0 hashes were not located in VirusTotal.
 You have utilized 500 tokens, leaving you with 0 token remaining.
+
+Text file Unprocessed_hashes has been created.
 ```
