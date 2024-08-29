@@ -20,10 +20,17 @@ headers = {
         "x-apikey": "PLACE_YOUR_KEY_HERE"
           }
 ```
+
 Additionally, you need to add your API key into url variable found in the `API_Usage_Counter` file
 ```
 url = "https://www.virustotal.com/api/v3/users/PLACE_YOUR_KEY_HERE/overall_quotas"
 ```
+
+For certain cases, you'll need to replace the `MD5` with the corresponding column title from the Excel file. 
+```
+MD5_Hash = df['MD5'].iloc[i]
+```
+
 Lastly, key in the excel file name in the `Excel_File_Name.py` file. 
 
 ```
@@ -164,4 +171,17 @@ A total of 0 SHA1 values were found, while 0 hashes were not located in VirusTot
 You have utilized 500 tokens, leaving you with 0 token remaining.
 
 Text file Unprocessed_hashes has been created.
+```
+
+### Scenario 4 of Unsuccessful Script Execution
+When you forgot to update the MD5_Hash variable:
+```
+########################################################################################
+AttributeError: 'MD51'.
+
+It looks like the MD5_Hash variable isn't defined properly.
+Kindly check the Excel file and make sure the column name matches the MD5_Hash variable.
+########################################################################################
+
+The codes have stopped running.
 ```
